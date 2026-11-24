@@ -335,11 +335,12 @@ def build():
     draw_text(buf, lx + 14, ly + 9, "CLIMATE  -  ANTALYA, TURKIYE", 2, RED)
     draw_text(buf, lx + 14, ly + 46, "COP31 COLLAPSES", 6, INK)
     draw_text(buf, lx + 14, ly + 92, "NO CLIMATE DEAL", 6, RED)
+    hline(buf, lx + 14, ly + 138, 320, RED, 3)
     lead_body = (
-        "After two weeks of talks, nearly 200 nations left Antalya with "
-        "no pact. The final draft never named fossil fuels, and critics "
-        "called the outcome a failure as the longest climate summit in "
-        "history ended divided."
+        "ANTALYA - After two weeks of talks, nearly 200 nations left "
+        "Antalya with no pact. The final draft never named fossil fuels, "
+        "and critics called the outcome a failure as the longest climate "
+        "summit in history ended divided."
     )
     draw_block(buf, lx + 14, ly + 148, lead_body, 2, INK, 600, 18)
     draw_globe(buf, lx + 800, ly + 190, 72)
@@ -399,9 +400,10 @@ def build():
     # ---- markets strip ---------------------------------------------------
     ym = 908
     frame(buf, MARGIN, ym, INNER, 46, INK, 2)
-    draw_text(buf, MARGIN + 12, ym + 14,
-              "MARKETS: SENSEX -1,484 TO 82,435 - INDIA OIL IMPORT BILL UP 60%",
-              2, INK)
+    draw_text(buf, MARGIN + 12, ym + 8,
+              "MARKETS: SENSEX -1,484 TO 82,435", 2, INK)
+    draw_text(buf, MARGIN + 12, ym + 26,
+              "INDIA OIL IMPORT BILL UP 60% IN OCTOBER", 2, RED)
 
     # ---- footer ----------------------------------------------------------
     draw_centered(buf, 972, "THE WORLD IN ONE DAY  -  TUESDAY, 24 NOVEMBER 2026",
